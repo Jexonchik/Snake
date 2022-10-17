@@ -72,7 +72,7 @@ public class Tail : MonoBehaviour
                 if (blocks.BlockValue == 0 && BodySnake.Count > 0) { Destroy(other.gameObject); }
                 else if (blocks.BlockValue > 0 && BodySnake.Count == 0) 
                 { 
-                    GameOver();  
+                    GameOver(); Destroy(other.gameObject); 
                 }
             }
 
